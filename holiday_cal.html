@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Holidays</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .height_icon{
+        height:100px;
+        width:100px;
+      }
+
+      .color_white{
+        color:white;
+      }
+
+      th,td,tr{
+        border:2px solid white;
+        color:white;
+        font-size:medium;
+        text-align: center;
+        
+      }
+
+
+      input{
+        width:80px;
+      }
+
+      body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQQArFgUUeWeCSSBknnR3P7RUjuNck4HozjKCYWBQNIP_AAh1D&usqp=CAU);
+
+      }
+
+      .trans{
+        background-color: transparent;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid trans ">
+      
+      <div class="row">
+        <div class="col-12">
+          <div class="row shadow">
+          <div class="col-3"><img class="img-fluid height_icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8OjG8XyOVLUQoj8NMUEgUouvNPvhtKbcs4981K-EJwiw3xXjq&usqp=CAU"></div>
+        <h2 class="col-9  text-center font-weight-bold  text-primary">HOLIDAYS</h2>
+          </div>
+        </div>
+      </div>
+      
+     
+        <div class="row">
+          <div class="col-12 p-5">
+            <div class="row">
+            <div class="col-3  "><select type="text" id="country"></select></div>
+            
+              <div class="col-1 offset-1 text-center"><select type="text"  id="day"><option value="day">Day</option></select></div>
+              <div class="col-1  text-center">
+                <select id="month">
+                <option value="month">Month</option>
+                <option value="1" text=1>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                </select>
+              </div>
+              
+              <div class="col-1  text-center"><select type="text"  id="year"><option>Year</option></select></div>
+              
+              <div class="col-1 offset-3"><button class="btn-primary  btn-lg" id="holiday_btn" onclick = 'get_holidays()'>Click</button> </div>
+            </div>
+            
+          </div>
+          </div>
+      
+    </div>
+    
+    <div class="container color_white trans mb-5">
+      <div class=" text-center font-weight-bold h4" >List of Holidays</div>
+      <table class="col-12">
+        <div class="text-center color_white display-3 font-weight-bold"id="cap"></div>
+        
+        <thead class="text-center" id="head">
+          
+        </thead>
+        <tbody id="display"></tbody>
+        
+      </table>
+    </div>
+    <script rel="javascript" type="text/javascript" src="index.js" ></script>
+  </body>
+</html>
