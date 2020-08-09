@@ -2,7 +2,7 @@
   <h1 align="center">HOLIDAY CALENDER</h1>
 </p>
 
-![]()
+![](https://raw.githubusercontent.com/lalithakunchala/module-2/master/Calender.png)
   
 
 ## Instructions to run locally
